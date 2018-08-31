@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Oswald:400,700" rel="stylesheet">
+    <title>Eliminate Tobacco Dashboard</title>
+</head>
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="prev-tab" data-toggle="tab" href="#prevention" role="tab" aria-controls="prevention" aria-selected="true">Prevention</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="policy-tab" data-toggle="tab" href="#policy" role="tab" aria-controls="policy" aria-selected="false">Policy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cessation-tab" data-toggle="tab" href="#cessation" role="tab" aria-controls="cessation" aria-selected="false">Cessation</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="prevention" role="tabpanel" aria-labelledby="home-tab">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col">Goal Area / Intitution</th>
+                        <th class="rotate" scope="col"><div><span>UT Health at Houston</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Health Northeast at Tyler</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Health Science Center at San Antonio</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT MD Anderson Cancer Center</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Medical Branch at Galveston</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Southwestern Medical Center</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Arlington</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Austin</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Dallas</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT El Paso</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Permian Basin</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Rio Grande Valley</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT San Antonio</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Tyler</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT System Administration</span></div></th>
+                        </tr>
+                    </thead>
+                    <tbody id="prev-body">
+        
+                    </tbody>
+                </table>
+            
+        </div>
+        <div class="tab-pane fade" id="policy" role="tabpanel" aria-labelledby="profile-tab">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">Goal Area / Intitution</th>
+                    <th class="rotate" scope="col"><div><span>UT Health at Houston</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Health Northeast at Tyler</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Health Science Center at San Antonio</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT MD Anderson Cancer Center</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Medical Branch at Galveston</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Southwestern Medical Center</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Arlington</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Austin</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Dallas</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT El Paso</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Permian Basin</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Rio Grande Valley</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT San Antonio</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT Tyler</span></div></th>
+                    <th class="rotate" scope="col"><div><span>UT System Administration</span></div></th>
+                    </tr>
+                </thead>
+                <tbody id="policy-body">
+    
+                </tbody>
+            </table>
+            
+        </div>
+
+        <div class="tab-pane fade" id="cessation" role="tabpanel" aria-labelledby="contact-tab">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col">Goal Area / Intitution</th>
+                        <th class="rotate" scope="col"><div><span>UT Health at Houston</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Health Northeast at Tyler</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Health Science Center at San Antonio</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT MD Anderson Cancer Center</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Medical Branch at Galveston</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Southwestern Medical Center</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Arlington</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Austin</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Dallas</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT El Paso</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Permian Basin</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Rio Grande Valley</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT San Antonio</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT Tyler</span></div></th>
+                        <th class="rotate" scope="col"><div><span>UT System Administration</span></div></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cessation-body">
+        
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    <script src= "./app.js"></script>
+</body>
+</html>
+
+
