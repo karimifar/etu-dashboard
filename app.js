@@ -36,7 +36,7 @@ function printData() {
         if (data.hasOwnProperty(key)) {
             for(var item in data[key]){
                 if(data[key].hasOwnProperty(item)){
-                    var row = "<tr id=row-"+j+"><th class='left-th' scope='row'>"+item+"</th></tr>";
+                    var row = "<tr id=row-"+j+"><th class='left-th' scope='row'><div>"+item+"</div></th></tr>";
                     var instArray= data[key][item];
                     switch(key){
                         case 'Prevention':

@@ -1,6 +1,7 @@
 
 *{
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -23,6 +24,25 @@ body{
     color: #e35205;
 }
 
+.tab-content, ul.nav{
+    width: 90%;
+    margin: auto;
+}
+
+ul.nav{
+    padding: 0 20px;
+}
+.tab-pane {
+    overflow: auto;
+    width: fit-content;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+
+
 th.rotate div  {
   /* border-bottom: 1px solid #ccc; */
   /* width:100px; */
@@ -36,34 +56,21 @@ th.rotate div  {
   transform: rotate(180deg);
   margin: auto;
 }
-th{
-    font-size: 12px;
-}
-.tab-content, ul.nav{
-    width: 80%;
-    margin: auto;
-}
 
-ul.nav{
-    padding: 0 20px;
-}
-th.left-th{
-    width: fit-content;
-    max-width: 300px;
-    font-size: 12px;
-}
-table{
-    border: #ddd 1px solid;
-}
 
-th.rotate{
-    border-left: #ddd 1px solid;
+td, th{
+    padding: 8px;
 }
 
 td img{
     width: 20px;
     margin: auto;
 }
+
+th{
+    font-size: 12px;
+}
+
 
 td.data-16{
     background: #ffffff80;
@@ -73,4 +80,139 @@ td.data-17{
 }
 td.data-18{
     background: #9ed2f5de;
+}
+
+thead {
+    width: 100% ;
+    /* display: inline-block; */
+}
+tbody {
+    /* display: inline-block; */
+    height: 200px;
+    width: 100%;
+    overflow: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    display: block;
+}
+tr{
+    width: 100%;
+}
+
+th.left-th{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 16%;
+    min-width: 16%;
+    font-size: 12px;
+    hyphens: auto;
+    border: #ddd 1px solid;
+}
+
+td{
+    padding: 8px;
+    width: 5.6%;
+    border: #ddd 1px solid;
+}
+
+th.rotate{
+    width: 5.6%;
+    border: #ddd 1px solid;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+
+#header{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-left: 5%;
+}
+#header h1{
+    font-family: 'oswald', sans-serif;
+    font-weight: 800;
+    color: #e35205;
+}
+#header h2{
+    font-family: 'oswald', sans-serif;
+    color: #005f86;
+}
+#header .title{
+    width: 60%;
+    display: inline-block;
+}
+#header .legend{
+    padding: 20px;
+    width:40%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+#header .legend div img{
+    padding: 2px;
+    width: 20px;
+}
+#header .legend div {
+    width: fit-content;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 1.1em;
+    display: inline-block;
+}
+#header .legend div p {
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 800px) {
+    th{
+        font-size: 10px;
+    }
+
+    th.left-th{
+        font-size: 10px;
+    }
+    .tab-content, ul.nav{
+        width: 100%;
+        margin: auto;
+    }
+    td img{
+        width: 13px;
+    }
+
+    td{
+        width: 5%;
+    }
+    th.rotate{
+        width: 5%;
+    }
+    th.left-th {
+       width: 30%;
+    }
+
+    #header .title{
+        width: 100%;
+    }
+    #header .legend{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    th.left-th div{
+        writing-mode: vertical-rl;
+        vertical-align: top;
+        text-orientation: sideways-right ;
+        transform: rotate(180deg);
+        height: 70px;
+    }
 }

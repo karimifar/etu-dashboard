@@ -18,6 +18,29 @@
     <title>Eliminate Tobacco Dashboard</title>
 </head>
 <body>
+    <div id="header">
+        <div class="title">
+            <h1>2016-2018</h1>
+            <h2>UT System Eliminate Tobacco Campus Progression</h2>
+        </div><!--
+     --><div class="legend">
+                <div>
+                    <img src="./img/x.png">
+                    <p>Cuurently <br>not offered</p>
+                </div>
+                <div>
+                    <img src="./img/flag.png">
+                    <p>Cuurently <br>assessing</p>
+                </div>
+                <div>
+                    <img src="./img/check.png">
+                    <p>Cuurently <br>offered</p>
+                </div>
+            </div>
+        
+
+    </div>
+    
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="prev-tab" data-toggle="tab" href="#prevention" role="tab" aria-controls="prevention" aria-selected="true">Prevention</a>
@@ -28,13 +51,30 @@
         <li class="nav-item">
             <a class="nav-link" id="cessation-tab" data-toggle="tab" href="#cessation" role="tab" aria-controls="cessation" aria-selected="false">Cessation</a>
         </li>
+        <!-- <li class="legend-li">
+            <div class="legend">
+                <div>
+                    <img src="./img/x.png">
+                    <p>Cuurently <br>not offered</p>
+                </div>
+                <div>
+                    <img src="./img/flag.png">
+                    <p>Cuurently <br>assessing</p>
+                </div>
+                <div>
+                    <img src="./img/check.png">
+                    <p>Cuurently <br>offered</p>
+                </div>
+            </div>
+
+        </li> -->
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="prevention" role="tabpanel" aria-labelledby="home-tab">
-                <table class="table table-striped">
+                <table class="mytable">
                     <thead>
                         <tr>
-                        <th scope="col">Goal Area / Intitution</th>
+                        <th scope="col" class="left-th" id="corner-cell"><div>Goal Area / Intitution</div></th>
                         <th class="rotate" scope="col"><div><span>UT Health at Houston</span></div></th>
                         <th class="rotate" scope="col"><div><span>UT Health Northeast at Tyler</span></div></th>
                         <th class="rotate" scope="col"><div><span>UT Health Science Center at San Antonio</span></div></th>
@@ -51,18 +91,18 @@
                         <th class="rotate" scope="col"><div><span>UT Tyler</span></div></th>
                         <th class="rotate" scope="col"><div><span>UT System Administration</span></div></th>
                         </tr>
-                    </thead>
-                    <tbody id="prev-body">
+                    </thead><!--
+                    --><tbody id="prev-body">
         
                     </tbody>
                 </table>
             
         </div>
         <div class="tab-pane fade" id="policy" role="tabpanel" aria-labelledby="profile-tab">
-            <table class="table table-striped">
+            <table class="mytable">
                 <thead>
                     <tr>
-                    <th scope="col">Goal Area / Intitution</th>
+                    <th scope="row" class="left-th">Goal Area / Intitution</th>
                     <th class="rotate" scope="col"><div><span>UT Health at Houston</span></div></th>
                     <th class="rotate" scope="col"><div><span>UT Health Northeast at Tyler</span></div></th>
                     <th class="rotate" scope="col"><div><span>UT Health Science Center at San Antonio</span></div></th>
@@ -88,25 +128,25 @@
         </div>
 
         <div class="tab-pane fade" id="cessation" role="tabpanel" aria-labelledby="contact-tab">
-                <table class="table table-striped">
+                <table class="mytable">
                     <thead>
                         <tr>
-                        <th scope="col">Goal Area / Intitution</th>
-                        <th class="rotate" scope="col"><div><span>UT Health at Houston</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Health Northeast at Tyler</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Health Science Center at San Antonio</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT MD Anderson Cancer Center</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Medical Branch at Galveston</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Southwestern Medical Center</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Arlington</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Austin</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Dallas</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT El Paso</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Permian Basin</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Rio Grande Valley</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT San Antonio</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT Tyler</span></div></th>
-                        <th class="rotate" scope="col"><div><span>UT System Administration</span></div></th>
+                            <th scope="col" class="left-th">Goal Area / Intitution</th>
+                            <th class="rotate" scope="col"><div><span>UT Health at Houston</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Health Northeast at Tyler</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Health Science Center at San Antonio</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT MD Anderson Cancer Center</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Medical Branch at Galveston</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Southwestern Medical Center</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Arlington</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Austin</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Dallas</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT El Paso</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Permian Basin</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Rio Grande Valley</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT San Antonio</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT Tyler</span></div></th>
+                            <th class="rotate" scope="col"><div><span>UT System Administration</span></div></th>
                         </tr>
                     </thead>
                     <tbody id="cessation-body">
