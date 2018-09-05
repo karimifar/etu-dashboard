@@ -73,13 +73,17 @@ th{
 
 
 td.data-16{
-    background: #ffffff80;
+    background: rgba(227, 83, 5, 0.1);
+    background: #fff;
+    
 }
 td.data-17{
-    background: #e35305de;
+    background: rgba(225, 215, 0, 0.5);
+    background: #fff;
 }
 td.data-18{
-    background: #9ed2f5de;
+    background: rgba(158, 210, 245, 0.5);
+    background: #fff;
 }
 
 thead {
@@ -119,13 +123,14 @@ td{
 }
 
 th.rotate{
+    font-size: 15px;
     width: 5.6%;
     border: #ddd 1px solid;
 }
 
-tr:nth-child(even){
+/* tr:nth-child(even){
     background-color: #f2f2f2
-}
+} */
 
 
 #header{
@@ -174,6 +179,9 @@ tr:nth-child(even){
 
 
 @media only screen and (max-width: 800px) {
+    th.rotate{
+        font-size: 13px;
+    }
     th{
         font-size: 10px;
     }

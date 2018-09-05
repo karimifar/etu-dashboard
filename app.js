@@ -96,6 +96,41 @@ function printRowData(array, rowNum){
 
 printData();
 
+$(".year-btn").on("click", function(event){
+    event.preventDefault();
+    let target= $(this).attr("data");
+    let color1, color2;
+    switch(target){
+        case "data-16":
+            color1 = $("td."+target).css("background-color")
+            color2 = "rgba(227, 83, 5, 0.1)"
+            switchColor(color1,color2, target);
+            break;
+        case "data-17":
+            color1 = $("td."+target).css("background-color")
+            color2 = "rgba(225, 215, 0, 0.6)"
+            switchColor(color1,color2, target);
+            break;
+        case "data-18":
+            color1 = $("td."+target).css("background-color")
+            color2 = "rgba(158, 210, 245, 0.5)"
+            switchColor(color1,color2, target);
+            break;
+
+    }
+    // let color = $("."+target).css("background-color");
+    // alert(color)
+})
+
+function switchColor(a, b, cell){
+    if( a === "rgb(255, 255, 255)"){
+        $("td."+cell).css("background-color", b)
+        $("button."+cell).css("background-color", b)
+    }else{
+        $("td."+cell).css("background-color", "rgb(255, 255, 255)")
+        $("button."+cell).css("background-color", "rgb(255, 255, 255)")
+    }
+}
 //The order in the array:
 // 0- 'UT Health at Houston'
 // 1- 'UT Health Northeast at Tyler'
