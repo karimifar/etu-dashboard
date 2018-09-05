@@ -15,7 +15,7 @@
 // 13- 'UT Tyler'
 // 14- 'UT System Administration'
 
-//first digit= year (2016=1, 2017=2, 2018=3 0="none")
+//first digit= year (2016=1, 2017=2, 2018=3 4="none")
 //second digit= status: 1=check, 2= flag, 3= X 4="through research trials only" 0="none")
 var data={
     Prevention:{
