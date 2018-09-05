@@ -177,6 +177,30 @@ th.rotate{
     margin: 0;
 }
 
+#yearBtns{
+    padding: 10px;
+    margin: auto;
+}
+#yearBtns p{
+    padding: 7px;
+    font-weight: 400;
+}
+#yearBtns button{
+    padding: 7px;
+    background-color: white;
+    font-size: 14px;
+    border: #ddd 1px solid;
+    margin: 3px;
+    transition: all 0.2s ease-in-out;
+}
+#yearBtns button:hover{
+    color: #999;
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+#yearBtns button:focus{
+    box-shadow: none;
+}
 
 @media only screen and (max-width: 800px) {
     th.rotate{

@@ -108,12 +108,12 @@ $(".year-btn").on("click", function(event){
             break;
         case "data-17":
             color1 = $("td."+target).css("background-color")
-            color2 = "rgba(225, 215, 0, 0.6)"
+            color2 = "rgba(227, 83, 5, 0.8)"
             switchColor(color1,color2, target);
             break;
         case "data-18":
             color1 = $("td."+target).css("background-color")
-            color2 = "rgba(158, 210, 245, 0.5)"
+            color2 = "rgba(158, 210, 245, 0.8)"
             switchColor(color1,color2, target);
             break;
 
