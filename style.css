@@ -135,10 +135,9 @@ th.rotate{
 
 
 #header{
-    width: 80%;
+    width: 100%;
     margin: auto;
-    margin-bottom: 40px;
-    margin-left: 5%;
+    padding: 0 10%;
 }
 #header h1{
     font-family: 'oswald', sans-serif;
@@ -149,21 +148,11 @@ th.rotate{
     font-family: 'oswald', sans-serif;
     color: #005f86;
 }
-#header .title{
-    width: 60%;
-    display: inline-block;
-}
+
 #header .legend{
     padding: 20px;
-    width:40%;
-    display: inline-block;
+    width:100%;
     vertical-align: middle;
-}
-
-
-#header .legend div img{
-    padding: 2px;
-    width: 20px;
 }
 #header .legend div {
     width: fit-content;
@@ -172,18 +161,24 @@ th.rotate{
     font-size: 12px;
     font-weight: 100;
     line-height: 1.1em;
-    display: inline-block;
 }
 #header .legend div p {
     margin: 0;
 }
 
+
+#header .legend div img{
+    padding: 2px;
+    width: 20px;
+}
+
 #yearBtns{
-    padding: 10px;
+    padding: 0 10px;
     margin: auto;
+    border-left: #005f86 1px solid;
 }
 #yearBtns p{
-    padding: 7px;
+    padding: 0 7px 7px;
     font-weight: 400;
 }
 #yearBtns button{
@@ -193,6 +188,7 @@ th.rotate{
     border: #ddd 1px solid;
     margin: 3px;
     transition: all 0.2s ease-in-out;
+    color: #005f86;
 }
 #yearBtns button:hover{
     color: #999;
@@ -206,7 +202,7 @@ th.rotate{
 
 
 tbody tr:hover {
-    border: #ccc 2px solid;
+    border: #ccca 2px solid;
   }
   
   
@@ -251,7 +247,9 @@ tbody tr:hover {
     th.left-th {
        width: 30%;
     }
-
+    #header{
+        padding: 0 2%;
+    }
     #header .title{
         width: 100%;
     }
@@ -267,5 +265,13 @@ tbody tr:hover {
         text-orientation: sideways-right ;
         transform: rotate(180deg);
         height: 70px;
+    }
+
+    #yearBtns button{
+        font-size: 10px;
+        
+    }
+    #header .legend div {
+        font-size: 10px;
     }
 }
