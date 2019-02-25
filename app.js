@@ -40,10 +40,10 @@ var data={
         'Group Counseling Offered': [31,11,11,11,33,11,21,11,12,11,12,12,21,12,12],
         'Offered to Employee': [11,11,11,11,33,11,11,11,11,11,11,11,11,11,11],
         "Offered to Employee's Dependents": [12,11,11,11,33,12,12,12,12,12,21,11,11,11,12],
-        'Offered to Patients (If Applicatble)': [11,11,11,11,33,11,40,40,40,40,40,40,40,40,40],
+        'Offered to Patients (If Applicable)': [11,11,11,11,33,11,40,40,40,40,40,40,40,40,40],
         'Available to Community': [13,13,31,44,13,31,13,44,13,21,13,13,13,13,13],
         'Located On Campus': [11,11,11,11,33,11,31,33,31,11,33,33,11,21,33],
-        'Located Off-Site (Other Hospitals) (If Applicable)': [11,11,11,11,40,11,40,40,40,40,40,40,40,40,40],
+        'Located Off-Site (Other Hospitals) (If Applicable)': [11,11,11,11,43,11,40,40,40,40,40,40,40,40,40],
         'Telehealth': [12,33,12,11,33,12,12,12,12,21,12,12,12,12,12],
         'Communication, Marketing of the Program': [11,33,11,11,33,12,12,11,12,11,12,12,11,12,11]
     }
@@ -99,7 +99,7 @@ function printRowData(array, rowNum){
                 td = "<td class='text-center'>Through research trials only</td>";
                 break;
             case '0':
-                td = "<td class='text-center'></td>";
+                td = "<td class='text-center'>N/A</td>";
                 break;
         }
         $('#row-'+rowNum).append(td);
