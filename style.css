@@ -202,9 +202,13 @@ th.rotate{
 
 
 tbody tr:hover {
-    border: #ccca 2px solid;
+    /* border: #ccca 2px solid; */
+    background: #eee;
   }
-  
+  tbody tr:hover td{
+    /* border: #ccca 2px solid; */
+    background: #eee;
+  }
   
   /* Focus stuff for mobile */
   td:focus::before,
