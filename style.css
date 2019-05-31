@@ -73,17 +73,17 @@ th{
 
 
 td.data-16{
-    background: rgba(227, 83, 5, 0.1);
-    background: #fff;
+    background: rgba(0,0,0,0);
     
 }
 td.data-17{
-    background: rgba(225, 215, 0, 0.5);
-    background: #fff;
+    background: rgba(0,0,0,0);
 }
 td.data-18{
-    background: rgba(158, 210, 245, 0.5);
-    background: #fff;
+    background: rgba(0,0,0,0);
+}
+td.data-19{
+    background: rgba(0,0,0,0);
 }
 
 thead {
@@ -203,11 +203,11 @@ th.rotate{
 
 tbody tr:hover {
     /* border: #ccca 2px solid; */
-    background: #eee;
+    background: #eee ;
   }
   tbody tr:hover td{
     /* border: #ccca 2px solid; */
-    background: #eee;
+    background: #eee ;
   }
   
   /* Focus stuff for mobile */

@@ -15,16 +15,16 @@
 // 13- 'UT Tyler'
 // 14- 'UT System Administration'
 
-//first digit= year (2016=1, 2017=2, 2018=3 4="none")
+//first digit= year (2016=1, 2017=2, 2018=3 4="2019" 9="none")
 //second digit= status: 1=check, 2= flag, 3= X 4="through research trials only" 0="none")
 var data={
     Prevention:{
         'Education Brochures': [11,11,11,11,11,11,11,11,22,11,12,31,11,12,11],
-        'Technology Based Program': [11,12,12,31,33,11,11,11,33,11,33,12,11,12,11],
-        'Available for Employees': [11,11,11,11,11,11,11,11,33,11,12,12,11,12,11],
-        "Available for Employees' Dependents": [12,12,11,11,11,12,12,11,33,12,12,12,11,12,11],
-        'Available for Community': [11,11,11,11,11,11,12,12,12,21,12,12,32,33,11],
-        'Hosting On-Campus Events': [33,33,31,12,11,31,11,11,12,11,11,12,11,33,33]
+        'Technology Based Program': [11,12,12,31,33,42,11,11,42,11,33,42,11,12,11],
+        'Available for Employees': [11,11,11,11,11,11,11,11,33,11,12,42,11,12,11],
+        "Available for Employees' Dependents": [12,12,11,11,11,41,12,11,33,12,12,42,11,12,11],
+        'Available for Community': [11,11,11,11,11,11,12,12,12,21,12,42,32,33,11],
+        'Hosting On-Campus Events': [33,33,31,12,11,31,11,11,41,11,11,42,11,33,33]
     },
     Policy:{
         '100% Smoke-Free': [11,11,11,11,11,11,11,11,31,11,21,11,11,21,11],
@@ -40,10 +40,10 @@ var data={
         'Group Counseling Offered': [31,11,11,11,33,11,21,11,12,11,12,12,21,12,12],
         'Offered to Employee': [11,11,11,11,33,11,11,11,11,11,11,11,11,11,11],
         "Offered to Employee's Dependents": [12,11,11,11,33,12,12,12,12,12,21,11,11,11,12],
-        'Offered to Patients (If Applicable)': [11,11,11,11,33,11,40,40,40,40,40,40,40,40,40],
-        'Available to Community': [13,13,31,44,13,31,13,44,13,21,13,13,13,13,13],
+        'Offered to Patients (If Applicable)': [11,11,11,11,33,11,90,90,90,90,90,90,90,90,90],
+        'Available to Community': [13,13,31,94,13,31,13,94,13,21,13,13,13,13,13],
         'Located On Campus': [11,11,11,11,33,11,31,33,31,11,33,33,11,21,33],
-        'Located Off-Site (Other Hospitals) (If Applicable)': [11,11,11,11,43,11,40,40,40,40,40,40,40,40,40],
+        'Located Off-Site (Other Hospitals) (If Applicable)': [11,11,11,11,93,11,90,90,90,90,90,90,90,90,90],
         'Telehealth': [12,33,12,11,33,12,12,12,12,21,12,12,12,12,12],
         'Communication, Marketing of the Program': [11,33,11,11,33,12,12,11,12,11,12,12,11,12,11]
     }
@@ -114,6 +114,9 @@ function printRowData(array, rowNum){
             case '3':
                 $('#row-'+rowNum+ " td").last().addClass("data-18")
                 break;
+            case '4':
+                $('#row-'+rowNum+ " td").last().addClass("data-19")
+                break;
         }
         
     }
@@ -142,6 +145,12 @@ $(".year-btn").on("click", function(event){
             color2 = "rgba(158, 210, 245, 0.8)"
             switchColor(color1,color2, target);
             break;
+        case "data-19":
+            color1 = $("td."+target).css("background-color")
+            color2 = "rgba(140, 216, 164, 0.8)"
+            console.log(color1,color2)
+            switchColor(color1,color2, target);
+            break;
 
     }
     // let color = $("."+target).css("background-color");
@@ -149,12 +158,12 @@ $(".year-btn").on("click", function(event){
 })
 
 function switchColor(a, b, cell){
-    if( a === "rgb(255, 255, 255)"){
+    if( a === "rgba(0, 0, 0, 0)"){
         $("td."+cell).css("background-color", b)
         $("button."+cell).css("background-color", b)
     }else{
-        $("td."+cell).css("background-color", "rgb(255, 255, 255)")
-        $("button."+cell).css("background-color", "rgb(255, 255, 255)")
+        $("td."+cell).css("background-color", "rgba(0,0,0,0)")
+        $("button."+cell).css("background-color", "rgba(0,0,0,0)")
     }
 }
 
