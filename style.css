@@ -165,7 +165,11 @@ th.rotate{
 #header .legend div p {
     margin: 0;
 }
-
+#update{
+    font-size: 10px;
+    margin-top:20px;
+    line-height: 1.1em;
+}
 
 #header .legend div img{
     padding: 2px;
@@ -260,6 +264,7 @@ tbody tr:hover {
     #header .legend{
         width: 100%;
     }
+    
 }
 
 @media only screen and (max-width: 600px) {
