@@ -31,7 +31,7 @@ var data={
         '100% Tobacco-Free': [11,11,11,11,11,11,11,11,31,11,21,11,11,21,11],
         'Includes ENDS and Other Tobacco Products (hookah, etc.)': [11,11,11,11,11,11,11,21,41,11,21,11,11,21,11],
         'Policy Communication (signage)': [11,12,11,11,11,11,11,11,31,11,21,41,11,42,11],
-        'Enforcement Procedures': [31,12,31,11,11,11,31,11,31,21,22,42,12,12,12],
+        'Enforcement Procedures': [31,12,31,11,11,11,31,11,31,21,22,41,12,12,12],
         'Tobacco‑Free Hiring': [13,41,13,11,13,12,13,13,13,13,13,13,13,13,13]
     },
     Cessation:{
